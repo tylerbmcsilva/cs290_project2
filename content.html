@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,154 @@
   <title>Hello, World!</title>
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-  
+  <h1>Tyler McSilva's Assignment for HTML/CSS</h1>
+
+  <!--Part 1-->
+  <div class="drop-card">
+    <table>
+      <caption>Fights between characters</caption>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Godzilla</th>
+          <th>Batman</th>
+          <th>Shaq</th>
+          <th>Aaron Carter</th>
+          <th>Abe Lincoln</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <td colspan="2">Footer 1</td>
+          <td colspan="4">Footer 2</td>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td>Godzilla</td>
+          <td>N/A</td>
+          <td>Minor Loss</td>
+          <td>Loss</td>
+          <td>Unknown</td>
+          <td>Unknown</td>
+        </tr>
+        <tr>
+          <td>Batman</td>
+          <td>Minor Win</td>
+          <td>N/A</td>
+          <td>Total Victory</td>
+          <td>Total Vicotry</td>
+          <td>Total Loss</td>
+        </tr>
+        <tr>
+          <td>Shaq</td>
+          <td>Win</td>
+          <td>Total Loss</td>
+          <td>N/A</td>
+          <td>Minor Loss</td>
+          <td>Unknown</td>
+        </tr>
+        <tr>
+          <td>Aaron Carter</td>
+          <td>Unknown</td>
+          <td>Total Loss</td>
+          <td>Minor Win</td>
+          <td>N/A</td>
+          <td>Unknown</td>
+        </tr>
+        <tr>
+          <td>Abe Lincoln</td>
+          <td>Unknown</td>
+          <td>Total Victory</td>
+          <td>Unknown</td>
+          <td>Unknown</td>
+          <td>N/A</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <!--Part 2-->
+  <div class="drop-card">
+    <ul>
+      <li>Best Language: Javascript</li>
+      <li>Wackyist Language: Brainf*ck</li>
+      <li>SEGFAULT Test Language: C</li>
+    </ul>
+  </div>
+
+
+  <!--Part 3-->
+  <div class="drop-card outer-content">
+    <div class="inner-content">
+      Stuff
+    </div>
+  </div>
+
+  <!--Part 4-->
+  <div class="drop-card fifty">
+    <h2>POST Form</h2>
+    <form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php"
+      method="POST">
+      <label for="text_input">
+        Name:
+        <input type="text" name="text_input" />
+      </label>
+      <label for="numerical_input">
+        Number:
+        <input type="number" name="numerical_input" />
+      </label>
+      <label for="password_input">
+        Password:
+        <input type="password" name="password_input" />
+      </label>
+      <label for="candy" class="inline-forms">
+        Choose a candy:<br>
+        <input type="radio" name="candy" value="Snickers" />
+        <label for="Snickers">Snickers</label><br>
+        <input type="radio" name="candy" value="Skittles" />
+        <label for="Skittles">Skittles</label><br>
+        <input type="radio" name="candy" value="Mentos" />
+        <label for="Mentos">Mentos</label><br>
+      </label>
+      <input type="submit">
+    </form>
+  </div>
+
+
+  <!--Part 5-->
+  <div class="drop-card fifty">
+    <h2>GET Form</h2>
+    <form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php"
+      method="GETs">
+      <label for="text_input">
+        Name:
+        <input type="text" name="text_input" />
+      </label>
+      <label for="numerical_input">
+        Number:
+        <input type="number" name="numerical_input" />
+      </label>
+      <label for="password_input">
+        Password:
+        <input type="password" name="password_input" />
+      </label>
+      <label for="candy" class="inline-forms">
+        Choose a candy:<br>
+        <input type="radio" name="candy" value="Snickers" />
+        <label for="Snickers">Snickers</label><br>
+        <input type="radio" name="candy" value="Skittles" />
+        <label for="Skittles">Skittles</label><br>
+        <input type="radio" name="candy" value="Mentos" />
+        <label for="Mentos">Mentos</label><br>
+      </label>
+      <input type="submit">
+    </form>
+  </div>
+
 </body>
+
 </html>

@@ -1,3 +1,95 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  padding: 1em;
+  font-family: sans-serif;
+  background-color: #EEEEEE;
+}
+
+.drop-card {
+  background-color: #FFF;
+  padding: 1em;
+  width: 98%; 
+  margin: 0 1% 1em;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 250ms;
+  margin-bottom: 1em;
+  overflow: scroll;
+}
+.drop-card:hover {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+table td,
+table th {
+  padding: 0.25em;
+  border: #AAAAAA solid 0.5px;
+}
+
+table tbody tr:nth-of-type(even){
+  background-color: #AAAAFF;
+}
+table tbody tr:nth-of-type(odd){
+  background-color: #DDDDFF;
+}
+
+table tbody td:first-child {
+  font-style: italic;
+}
+form label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+form input[type="submit"] {
+  display:block;
+}
+
+.outer-content {
+  display: block;
+  width: 75%;
+  background-color: rgb(255,200,200);
+  padding: 1em;
+  margin-bottom: 1em;
+  margin-top: 20px;
+}
+
+.inner-content {
+  display: block;
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+  padding: 1em;
+  background-color: rgb(200,200,255);
+}
+
+.inline-forms input {
+  display: inline-block;
+}
+
+.inline-forms label {
+  display: inline-block;
+}
+
+.drop-card.fifty {
+  display: inline-block;
+  float: left;
+  width: 48%;
+}
+@media screen and (max-width: 600px){
+  .drop-card.fifty {
+    width: 98%;
+  }
+}
